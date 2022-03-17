@@ -1,0 +1,23 @@
+{
+  "name": "sorting-algorithms",
+  "version": "1.0.0",
+  "description": "learning mocha and sorting",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=v12.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chagins/Sorting-algorithms.git"
+  },
+  "author": "chagins",
+  "license": "unlicense"
+}
