@@ -1,4 +1,4 @@
-module.exports = function selectionSort(arr){
+module.exports = function SelectionSort(arr){
   let localArr = [...arr];
   let i, j, min_id;
   for(i = 0; i < localArr.length - 1; i++){
