@@ -1,5 +1,5 @@
 const assert = require("assert");
-const shuffled_arrays = require('../test/shuffled_arrays.js');
+const shuffled_arrays = require('../utils/shuffled_arrays.js');
 const shuffledArrs = shuffled_arrays.shuffledArrs;
 const orderedArr = shuffled_arrays.orderedArr;
 
