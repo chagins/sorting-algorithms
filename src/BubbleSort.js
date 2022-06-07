@@ -1,16 +1,15 @@
 module.exports = function BubbleSort(arr) {
-  let localArr = [...arr];
-  let isSorted = true;
-  for (let i = 0; i < localArr.length - 1; i++) {
-    isSorted = true;
-    for (let j = 0; j < localArr.length - i - 1; j++) {
-      if (localArr[j] > localArr[j + 1]) {
+  const localArr = [...arr];
+
+  for(let i = 0; i < localArr.length - 1; i++) {
+    for(let j = 0; j < localArr.length - 1 - i; j++) {
+      if(localArr[j] > localArr[j+1]) {
         const temp = localArr[j];
-        localArr[j] = localArr[j + 1];
-        localArr[j + 1] = temp;
-        isSorted = false;
+        localArr[j] = localArr[j+1];
+        localArr[j+1] = temp;
       }
     }
-    if (isSorted) return localArr;
   }
+
+  return localArr;
 };
